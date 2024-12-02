@@ -23,6 +23,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +40,11 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--cor2);
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 h1 {
@@ -51,7 +57,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 h4 {
@@ -152,8 +158,8 @@ aside {
     padding: 25px 0 25px 0;
     text-align: center;
     border-radius: 15px;  
-    box-shadow: 0 15px 20px var(--cor3);
-    position: absolute;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 aside p {
@@ -174,13 +180,19 @@ aside hr {
     font-weight: bold;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 section .conteiner {
     width: 100%;
-    margin-top: 7vw;
     display: flex;
     flex-direction: row;
     gap: 35px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -188,25 +200,20 @@ section .conteiner {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 23%;
+    width: 210px;
     align-self: center;
 }
 
-.solution-card {
+.card {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     border-radius: 15px; 
-    box-shadow: 3px 3px 20px var(--cor3);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
     background-color: white;
+    padding: 30px;
     gap: 10px;
     width: 100%;
-    height: 100%;
-}
-
-.img-case {
-    width: 100%;
-    max-width: 280px;
+    height: max-content;
 }
 
 ul {
@@ -248,17 +255,23 @@ ul {
     border-radius: 25px;
     transform: rotateZ(-45deg);
     z-index: -1;
-    left: -12px;
-    top: 15px;
+    left: -10px;
+    top: 10px;
 }
 
-.services .solution-card {
-    width: 100%;
+/* section services */
+
+.service-card {
+    height: 240px;
     max-width: 220px;
 }
 
+/* section solutions */
+
 .solutions {
-    background: linear-gradient(to right, var(--cor5), var(--cor4));
+    background: linear-gradient(45deg, var(--cor5), var(--cor5), var(--cor4));
+    height: max-content;
+    min-height: 620px;
 }
 
 .solutions .conteiner {
@@ -268,6 +281,17 @@ ul {
 
 .solutions h3 {
     color: white;
+}
+
+.solutions .solution-card {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-platforms {
+    width: 100%;
+    min-width: 420px;
+    margin-top: 2vw;
+    margin-left: -10vw;
 }
 
 .solutions flex-slider {
@@ -298,6 +322,181 @@ ul {
     min-width: 22%;
 } */
 
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact .conteiner {
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 25px;
+    margin-top: -12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+}
+
+.img-contact {
+    width: 100%;
+    max-width: 250px;
+    margin-top: -12px;
+}
+
+.contact .section-content {
+    width: 320px;    
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;  
+    gap: 6px;
+    width: 300px;
+    padding-right: 40px;
+}
+
+input {
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-conteiner {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-contact{
+    padding: 4px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor5);
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+/* section award */
+
+.award .section-content {
+    margin-top: -10vh;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.award .conteiner {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.award-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 220px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 5px 20px 30px var(--cor3);
+}
+
+.award-pack {
+    width: 150px;
+}
+
+.btn-award {
+    padding: 5px;
+    border: 1px solid var(--cor4);
+    background-color: transparent;
+    color: var(--cor4);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.award-logo {
+    width: 150px;
+}
+
+.gray-line {
+    background-color: var(--cor3);
+    border: none;
+    height: 3px;
+}
+
+/* section tech */
+
+.tech-conteiner {
+    flex-direction: row;
+}
+
+.tech-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 220px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 5px 20px 30px var(--cor3);
+}
+
+.tech-logo {
+    width: 120px;
+}
+
+/* section cta */
+
+.cta {
+    background-color: var(--cor4);
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: -8vh;
+}
+
+.cta-link {
+    background-color: var(--cor5);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* section cases */
+
+.cases {
+    background-color: var(--cor3);
+    z-index: -1;
+    position: relative;
+}
+
+.cases h2 {
+    padding: 30px 0;
+}
+
+.img-case {
+    width: 100%;
+    max-width: 310px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* team */
+
 .team-photo {
     width: 100%;
     max-width: 150px;
@@ -316,4 +515,37 @@ footer {
 .footer-bottom {
     background-color: var(--cor1);
     color: var(--cor3);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1rem; 
+    }
+
+    h2 {
+        font-size: 0.6rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    h4 {
+        font-size: 1rem; 
+    }
+
+    p {
+        font-size: 0.7rem; 
+    }
+
+    aside p {
+        font-size: 0.7rem;
+    }
+
+    aside {
+        width: 80%;
+        max-width: 280px;
+        padding: 15px 5px 15px 5px;
+        white-space: nowrap;
+    }
 }
