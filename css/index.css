@@ -527,11 +527,14 @@ input {
 
 .clients .conteiner {
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.clients .clients-slider {
+/* .clients .clients-slider {
     padding-top: 50px;
-}
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .clients f-btn-back {
     left: -250px;
@@ -762,7 +765,7 @@ footer img {
     }
 
     .solutions {
-        height: 850px;
+        height: 870px;
         margin-bottom: -30vh;
     }
 
@@ -787,6 +790,19 @@ footer img {
     .contact-form {
         padding: 0;
         padding-bottom: 40px;
+    }
+
+    .contact input {
+        width: 100%;
+    }
+
+    .btn-conteiner {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .btn-contact {
+        width: 100%;
     }
 
     .tech-card {
