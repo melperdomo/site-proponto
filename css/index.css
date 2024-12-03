@@ -530,11 +530,10 @@ input {
     flex-wrap: wrap;
 }
 
-/* .clients .clients-slider {
+.clients .clients-logos {
     padding-top: 50px;
     display: flex;
-    flex-wrap: wrap;
-} */
+}
 
 .clients f-btn-back {
     left: -250px;
@@ -812,6 +811,10 @@ footer img {
 
     .cta {
         text-align: center;
+    }
+
+    .clients .clients-logos {
+        flex-direction: column;
     }
 
     .photo-galery {
