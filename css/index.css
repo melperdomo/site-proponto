@@ -329,15 +329,15 @@ ul {
     opacity: 1;
 } */
 
-/* .solutions f-btn-back {
+.solutions f-btn-back {
     left: -32px;
     border: none;
 }
 
 .solutions f-btn-next {
-    right: 445px;
+    right: -32px;
     border: none;
-} */
+}
 
 /* .solutions flex-slider[items-per-scroll='4'] f-slide {
     min-width: 22%;
@@ -710,7 +710,7 @@ footer img {
     .header-right {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         position: fixed;
         background: white;
         padding: 15px;
@@ -718,6 +718,7 @@ footer img {
         text-align: right;
         z-index: 1;
         border-radius: 10px;
+        right: 0;
     }
 
     .header-right.hide {
