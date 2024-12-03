@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="/css/flex-slider.css" />
   <link rel="stylesheet" href="/css/index.css" />
   <script src="/js/flex-slider.js"></script>
+  <script src="/js/index.js" ></script>
   <title>Próponto</title>
 </head>
 
 <body>
   <header>
     <div class="conteiner">
-      <div class="header-left">
+      <div class="header-left" id="home">
         <img class="header-logo" src="/images/logo-pp-padrão.png" alt="logo proponto padrao" />
       </div>
-      <div class="header-rigth">
+      <img onclick="openMenu()" class="svg-menu" src="/images/menu-svgrepo-com.svg" alt="botão de menu">
+      <div class="header-right hide">
         <a href="#services">Serviços</a>
         <a href="#solutions">Soluções</a>
         <a href="#award">Premiação</a>
@@ -199,7 +201,7 @@
         <div class="section-content">
           <h2>Entre em contato</h2>
           <h3>
-            <span class="yellow-dash">Juntos</span> vamos trabalhar pelos seus
+            <span class="yellow-dash">Juntos,</span> vamos trabalhar pelos seus
             objetivos.
           </h3>
           <p>
@@ -285,7 +287,7 @@
     </section>
 
     <div class="conteiner">
-      <hr class="gray-line">
+      <hr class="gray-line" />
     </div>
 
 
@@ -295,8 +297,7 @@
         <div class="section-content">
           <h2>Tecnologia</h2>
           <h3>
-            A ferramenta ideal para
-            <span class="yellow-dash">potencializar</span> sua campanha
+            A ferramenta ideal para <span class="yellow-dash" id="yellow-dash-potencializar">potencizalizar</span> sua campanha
           </h3>
           <p>
             Plataformas alinhadas às necessidades de cada ação, colocando a
@@ -338,7 +339,7 @@
       <div class="cta">
         <div>
           <h2>Escolha a solução ideal para o seu negócio.</h2>
-          <h3>Marque uma demonstração hoje mesmo!</h3>
+          <h3><span class="bold">Marque uma demonstração hoje mesmo!</span></h3>
         </div>
         <div><a class="cta-link" href="#contact">Quero agendar</a></div>
       </div>
@@ -348,122 +349,136 @@
       <div class="conteiner">
         <h2>Cases</h2>
       </div>
-      <div class="conteiner">        
+      <div class="conteiner">
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
         <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
         <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
       </div>
     </section>
 
-    <section id="clients">
+    <section class="clients" id="clients">
       <div class="conteiner">
         <h2>Clientes</h2>
-      </div>
-      <div class="conteiner">
         <h3>Onde já impulsionamos resultados!</h3>
-      </div>
-      <div class="conteiner">
         <div>
-          <img src="" alt="logo kenvue" />
-          <img src="" alt="logo unilever" />
-          <img src="" alt="logo mars" />
-          <img src="" alt="logo fini" />
-          <img src="" alt="logo brf" />
+          <flex-slider class="clients-slider" items-per-scroll="6" items-per-scroll-mobile="3">
+            <f-slide class="client-slide"><img src="" alt="logo kenvue" /></f-slide>
+            <f-slide class="client-slide"><img src="" alt="logo unilever" /></f-slide>
+            <f-slide class="client-slide"><img src="" alt="logo mars" /></f-slide>
+            <f-slide class="client-slide"><img src="" alt="logo fini" /></f-slide>
+            <f-slide class="client-slide"><img src="" alt="logo brf" /></f-slide>
+          </flex-slider>
         </div>
       </div>
     </section>
 
     <div class="conteiner">
-      <div class="section-content" id="about">
-        <h2>Quem somos</h2>
-        <h3>
-          São mais de <span class="yellow-dash">15 anos de expertise</span>,
-          auxiliando empresas a alcançarem os seus resultados.
-        </h3>
-        <p>
-          Na Próponto, contamos com um qualificado time interno que atua de
-          ponta a ponta para garantir a excelência na entrega de cada projeto.
-        </p>
-        <p>Marque uma apresentação e confira como podemos auxiliar você.</p>
-        <a href="#contact">Agendar reunião</a>
-        <img src="/images/IMG_QuemSomos.png" alt="we are incentiveaholic" />
-      </div>
+      <hr class="gray-line" />
     </div>
 
-    <div class="conteiner">
-      <div>
-        <h2>Equipe</h2>
-        <h3>Profissionais que fazem o dia a dia</h3>
-        <p>Um grande e talentoso time para cuidar de cada projeto.</p>
+    <section class="about" id="about">
+      <div class="conteiner">
+        <div class="section-content">
+          <h2>Quem somos</h2>
+          <h3>
+            São mais de <br><span class="yellow-dash">15 anos de expertise</span>,
+            auxiliando empresas a alcançarem os seus resultados.
+          </h3>
+          <p>
+            Na Próponto, contamos com um qualificado time interno que atua de
+            ponta a ponta para garantir a excelência na entrega de cada projeto.
+          </p>
+          <p><span class="bold">Marque uma apresentação e confira como podemos auxiliar você.</span></p>
+          <a class="about-link" href="#contact">Agendar reunião</a>
+        </div>
+        <img class="img-about" src="/images/IMG_QuemSomos.png" alt="we are incentiveaholic" />
       </div>
-      <div>
-        <img class="team-photo" src="/images/Guilherme.png" alt="guilherme foltys" />
-        <h4>Guilherme Foltys</h4>
-        <p>CEO</p>
+    </section>
+
+    <section class="team">
+      <div class="conteiner">
+        <div class="section-content">
+          <h2>Equipe</h2>
+          <h3>Profissionais que fazem o dia a dia</h3>
+          <p class="team-presentation">Um grande e talentoso time para cuidar de cada projeto.</p>
+        </div>
+        <div class="photo-galery">
+          <div class="team-card">
+            <img class="team-photo" src="/images/Guilherme.png" alt="guilherme foltys" />
+            <h4>Guilherme Foltys</h4>
+            <p>CEO</p>
+          </div>
+          <div class="team-card">
+            <img class="team-photo" src="/images/Fabio.png" alt="fabio ambrozio" />
+            <h4>Fábio Ambrozio</h4>
+            <p>Diretor de Novos Negócios</p>
+          </div>
+          <div class="team-card">
+            <img class="team-photo" src="/images/Viviana.png" alt="viviana luchiari" />
+            <h4>Viviana Luchiari</h4>
+            <p>Diretora Operacional</p>
+          </div>
+          <div class="team-card">
+            <img class="team-photo" src="/images/Caio.png" alt="caio garletti" />
+            <h4>Caio Garletti</h4>
+            <p>Diretor de Relacionamento</p>
+          </div>
+          <div class="team-card">
+            <img class="team-photo" src="/images/Milena.png" alt="milena ramacho" />
+            <h4>Milena Ramacho</h4>
+            <p>Diretora de Inteligência de Dados</p>
+          </div>
+          <div class="team-card">
+            <img class="team-photo" src="/images/Rafael.png" alt="rafael moraes" />
+            <h4>Rafael Moraes</h4>
+            <p>Diretor de TI</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img class="team-photo" src="/images/Fabio.png" alt="fabio ambrozio" />
-        <h4>Fábio Ambrozio</h4>
-        <p>Diretor de Novos Negócios</p>
-      </div>
-      <div>
-        <img class="team-photo" src="/images/Viviana.png" alt="viviana luchiari" />
-        <h4>Viviana Luchiari</h4>
-        <p>Diretora Operacional</p>
-      </div>
-      <div>
-        <img class="team-photo" src="/images/Caio.png" alt="caio garletti" />
-        <h4>Caio Garletti</h4>
-        <p>Diretor de Relacionamento</p>
-      </div>
-      <div>
-        <img class="team-photo" src="/images/Milena.png" alt="milena ramacho" />
-        <h4>Milena Ramacho</h4>
-        <p>Diretora de Inteligência de Dados</p>
-      </div>
-      <div>
-        <img class="team-photo" src="/images/Rafael.png" alt="rafael moraes" />
-        <h4>Rafael Moraes</h4>
-        <p>Diretor de TI</p>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     <div class="conteiner">
       <div class="address">
-        <h2>Onde estamos</h2>
         <div class="locals">
-          <p>AMERICANA</p>
+          <p>Onde estamos</p>
+          <p><span class="bold">AMERICANA</span></p>
           <p>Rua Tereza Linarello Meneguel, 189</p>
           <p>Jardim Paulista, Americana, SP – 13468-270</p>
           <p>(19) 3113-1480</p>
         </div>
         <div class="locals">
-          <p>ALPHAVILLE</p>
+          <p><span class="bold">ALPHAVILLE</span></p>
           <p>Alameda Tocantins, 125 – M1</p>
           <p>Alphaville, Barueri, SP – 06455-020</p>
           <p>(11) 2424-5389</p>
         </div>
         <div class="locals">
-          <p>MARÍLIA</p>
+          <p><span class="bold">MARÍLIA</span></p>
           <p>Rua Hygino Muzy Filho, 529 – CItec Sala 127</p>
           <p>Bairro Mirante, Marília, SP – 17525-901</p>
         </div>
       </div>
-      <a href="">Home</a>
-      <a href="#services">Serviços</a>
-      <a href="#solutions">Soluções</a>
-      <a href="#award">Premiação</a>
-      <a href="#cases">Cases</a>
-      <a href="#clients">Clientes</a>
-      <a href="#about">Quem Somos</a>
-      <a href="">Canal de Ética</a>
-      <img class="footer-logo" src="/images/logo-pp-branco-1.png" alt="logo proponto" />
-      <p>Siga nossas redes sociais</p>
-      <a href="https://www.linkedin.com/company/pr%C3%B3ponto/"><img src="/images/linkedin.png"
-          alt="linkedin proponto" /></a>
-      <a href="https://www.instagram.com/proponto/"><img src="/images/instagram.png" alt="instagram proponto" /></a>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Serviços</a>
+        <a href="#solutions">Soluções</a>
+        <a href="#award">Premiação</a>
+        <a href="#cases">Cases</a>
+        <a href="#clients">Clientes</a>
+        <a href="#about">Quem Somos</a>
+        <a href="https://b2b.proponto.com.br/Compliance?origin=UHJvcG9udG8=" target="blank">Canal de Ética</a>
+      </div>
+      <div class="footer-right">
+        <img class="footer-logo" src="/images/logo-pp-branco-1.png" alt="logo proponto" />
+        <p>Siga nossas redes sociais</p>
+        <div>
+          <a href="https://www.linkedin.com/company/pr%C3%B3ponto/" target="blank"><img src="/images/linkedin.png"
+              alt="linkedin proponto" /></a>
+          <a href="https://www.instagram.com/proponto/" target="blank"><img src="/images/instagram.png" alt="instagram proponto" /></a>
+        </div>
+      </div>
     </div>
 
     <div class="footer-bottom">

@@ -1,4 +1,3 @@
-console.log(typeof FlexSliderWC);
 
 if (typeof FlexSliderWC === 'undefined')
 {
@@ -27,7 +26,6 @@ if (typeof FlexSliderWC === 'undefined')
             btnNext.innerHTML = "&rsaquo;";
             btnNext.addEventListener("click", () => this.next());
 
-            console.log(this.childNodes);
             const scroller = document.createElement("f-scroller");
             scroller.replaceChildren(...this.childNodes);
 
@@ -94,5 +92,4 @@ if (typeof FlexSliderWC === 'undefined')
     }
 
     customElements.define('flex-slider', FlexSliderWC);
-    console.log("BORA, PORRA");
 }
