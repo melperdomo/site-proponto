@@ -405,7 +405,6 @@ input {
 /* section award */
 
 .award .section-content {
-    margin-top: -10vh;
     width: 100%;
     max-width: 600px;
     text-align: center;
@@ -414,7 +413,7 @@ input {
 }
 
 .award .conteiner {
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
@@ -433,7 +432,7 @@ input {
     width: 150px;
 }
 
-.btn-award {
+.link-award {
     padding: 5px;
     border: 1px solid var(--cor4);
     background-color: transparent;
@@ -802,6 +801,10 @@ footer img {
 
     .btn-contact {
         width: 100%;
+    }
+
+    .award {
+        padding-top: 5vh;
     }
 
     .tech-card {
