@@ -348,6 +348,7 @@ ul {
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-top: 8vh;
 }
 
 .contact .conteiner {
@@ -413,7 +414,7 @@ input {
 }
 
 .award .conteiner {
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-bottom: 5vh;
 }
 
