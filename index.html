@@ -4,11 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/flex-slider.css" />
+  <link rel="stylesheet" href="/css/flex-slider.min.css" defer/>
   <link rel="stylesheet" href="/css/index.css" />
-  <script src="/js/flex-slider.js"></script>
+  <script src="/js/flex-slider.min.js" defer></script>
   <script src="/js/index.js"></script>
+  
   <title>Próponto</title>
+  <meta name="description" content="Programas de incentivo e fidelidade personalizados que aumentam vendas, engajam públicos e fortalecem parcerias." />
+	<link rel="canonical" href="https://www.proponto.com.br/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home - Proponto" />
+	<meta property="og:description" content="Programas de incentivo e fidelidade personalizados que aumentam vendas, engajam públicos e fortalecem parcerias." />
+	<meta property="og:url" content="https://www.proponto.com.br/" />
+	<meta property="og:site_name" content="Próponto" />
+	<meta property="article:publisher" content="https://www.facebook.com/propontoincentivos" />
+	<meta property="article:modified_time" content="2023-07-07T15:05:23+00:00" />
+	<meta property="og:image" content="https://www.proponto.com.br/wp-content/uploads/2022/09/infografico-proponto-f.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. tempo de leitura" />
+	<meta name="twitter:data1" content="10 minutos" />
 </head>
 
 <body>
@@ -244,7 +259,7 @@
 
         <div class="card award-card">
 
-          <img class="award-logo" src="/images/Logo_IncentiStore.png" alt="logo incentistore" />
+          <img class="award-logo" src="/images/Incentis/incenti-store.png" alt="logo incentistore" />
           <img class="award-pack" src="/images/Pack_IncentiStore.png" alt="incentistore">
           <p>
             O maior e mais completo catálogo de prêmios do mercado, com mais
@@ -255,7 +270,7 @@
         </div>
 
         <div class="card award-card">
-          <img class="award-logo" src="/images/Logo_IncentiCard.png" alt="logo incenticard" />
+          <img class="award-logo" src="/images/Incentis/incenti-card.png" alt="logo incenticard" />
           <img class="award-pack" src="/images/Pack_IncentiCard.png" alt="incenticard">
           <p>
             Cartão premiação físico e/ou virtual para CPF e CNPJ.
@@ -266,7 +281,7 @@
         </div>
         <div class="card award-card">
 
-          <img class="award-logo" src="/images/Logo_IncentiPay.png" alt="logo incentipay" />
+          <img class="award-logo" src="/images/Incentis/incenti-pay.png" alt="logo incentipay" />
           <img class="award-pack" src="/images/Pack_IncentiPay.png" alt="incentipay">
           <p>
             A 1ª conta de incentivo digital que gera facilidades e
@@ -277,7 +292,7 @@
         </div>
         <div class="card award-card">
 
-          <img class="award-logo" src="/images/Logo_IncentiLog.png" alt="logo incentilog" />
+          <img class="award-logo" src="/images/Incentis/incenti-log.png" alt="logo incentilog" />
           <img class="award-pack" src="/images/Pack_IncentiLog.png" alt="incentilog">
           <p>
             Operação completa de concierge, com pesquisa e compra de itens.
@@ -291,11 +306,11 @@
     </section>
 
     <div class="conteiner">
-      <hr class="gray-line" />
+      <hr class="gray-line" id="tech"/>
     </div>
 
 
-    <section class="tech" id="tech">
+    <section class="tech">
       <div class="conteiner">
 
         <div class="section-content">
@@ -311,7 +326,7 @@
         </div>
 
         <div class="card tech-card">
-          <img class="tech-logo" src="/images/Logo_IncentiHub.png" alt="logo incentihub" />
+          <img class="tech-logo" src="/images/Incentis/incenti-hub.png" alt="logo incentihub" />
           <p>
             Plataforma modular que integra soluções de tecnologia, gestão,
             comunicação e premiação, oferecendo uma solução completa para o
@@ -319,7 +334,7 @@
           </p>
         </div>
         <div class="card tech-card">
-          <img class="tech-logo" src="/images/Logo_IncentiBot.png" alt="logo incentibot" />
+          <img class="tech-logo" src="/images/Incentis/incenti-bot.png" alt="logo incentibot" />
           <p>
             Inovadora jornada de incentivo com todos os recursos do
             IncentiHub, mas operada via WhatsApp, para que o participante
@@ -327,7 +342,7 @@
           </p>
         </div>
         <div class="card tech-card">
-          <img class="tech-logo" src="/images/Logo_IncentiPromo.png" alt="logo incentipromo" />
+          <img class="tech-logo" src="/images/Incentis/incenti-promo.png" alt="logo incentipromo" />
           <p>
             Plataforma promocional de operação e distribuição de números da
             sorte, prêmios instantâneos e sorteios, com integração com
@@ -366,11 +381,39 @@
         <h2>Clientes</h2>
         <h3>Onde já impulsionamos resultados!</h3>
         <div class="clients-logos">
-          <img src="" alt="logo kenvue" />
-          <img src="" alt="logo unilever" />
-          <img src="" alt="logo mars" />
-          <img src="" alt="logo fini" />
-          <img src="" alt="logo brf" />
+          <flex-slider class="clients-slider" items-per-scroll="6" items-per-scroll-mobile="1">
+            <f-slide><img class="client-logo" src="/images/Logos/logo-acer.png" alt="logo acer" /></f-slide>
+            <f-slide><img class="client-logo-natural" src="/images/Logos/logo-adidas.png" alt="logo "/></f-slide>
+            <f-slide><img class="client-logo" src="/images/Logos/logo-aiwa.png" alt="logo "/></f-slide>
+            <f-slide><img class="client-logo" src="/images/Logos/logo-allianz.png" alt="logo "/></f-slide>
+            <f-slide><img class="client-logo" src="/images/Logos/logo-amil.png" alt="logo "/></f-slide>
+            <f-slide><img class="client-logo" src="/images/Logos/logo-bauducco.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-brf.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-camil.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-canon.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-cury.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-fini.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-fischer.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-ford.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-heineken.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-heliar.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-kenvue.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-mars.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-mobil.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-mobilize.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-mondial.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-nielsen.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-nubank.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-pepsico.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-quintoandar.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-sclagro.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-serasa.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-sorocaba-refrescos.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-tiktok.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-uniao.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-unilever.png" alt="logo "/></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-natural" src="/images/Logos/logo-ype.png" alt="logo "/></f-slide>
+          </flex-slider>
         </div>
       </div>
     </section>

@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;800&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    src: url('/font/Poppins-Regular.woff2') format('woff2');
+  }
+  
+  /* Fonte Poppins Bold */
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    src: url('/font/Poppins-Bold.woff2') format('woff2');
+  }
 
 :root {
     --cor1: #3b4246;
@@ -115,7 +128,7 @@ header .svg-menu {
 }
 
 .banner {
-    background-image: url("/images/Banner.png");
+    background-image: url("/images/Banner.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,6 +168,11 @@ header .svg-menu {
     z-index: 1;
 }
 
+@keyframes underlineHeadline {
+    from {width: 0;}
+    to {width: 103%;}
+}
+
 .yellow-dash-headline::before {
     content: " ";
     width: 102%;
@@ -165,6 +183,8 @@ header .svg-menu {
     left: -2px;
     z-index: -1;
     border-radius: 15px;
+    animation-name: underlineHeadline;
+    animation-duration: 2s;
 }
 
 aside {
@@ -251,9 +271,14 @@ ul {
     position: relative;
 }
 
+@keyframes underline {
+    from {width: 0;}
+    to {width: 103%;}
+}
+
 .yellow-dash::before {
     content: " ";
-    width: 103%;
+    width: 0;
     height: 4px;
     background-color: var(--cor5);
     position: absolute;
@@ -261,6 +286,13 @@ ul {
     left: -3px;
     z-index: -1;
     border-radius: 15px;
+}
+
+.yellow-dash.animate::before {
+    width: 103%;
+    animation-name: underline;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .yellow-stick {
@@ -535,16 +567,20 @@ input {
     display: flex;
 }
 
-.clients f-btn-back {
-    left: -250px;
-    border: none;
-    color: var(--cor1);
+.client-logo {
+    width: 120px;
 }
 
-.clients f-btn-next {
-    right: -250px;
+.clients-slider f-btn-back {
+    left: -32px;
     border: none;
-    color: var(--cor1);
+    color: var(--cor2);
+}
+
+.clients-slider f-btn-next {
+    right: -32px;
+    border: none;
+    color: var(--cor2);
 }
 
 /* about */
@@ -646,6 +682,7 @@ footer p {
     flex-direction: column;
     justify-content: flex-start;
     width: 250px;
+    gap: 15px;
 }
 
 footer a {
@@ -819,6 +856,12 @@ footer img {
 
     .clients .clients-logos {
         flex-direction: column;
+    }
+
+    .clients-slider {
+        width:80%; 
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .photo-galery {
