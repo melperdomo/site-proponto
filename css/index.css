@@ -54,10 +54,11 @@ body {
 a {
     text-decoration: none;
     color: var(--cor2);
+    transition: 0.25s;
 }
 
 a:hover {
-    font-weight: bold;
+    color: var(--cor4);
 }
 
 h1 {
@@ -100,7 +101,6 @@ header {
 
 header .conteiner {
     width: 100vw;
-    max-width: 1000px;
     height: max-content;
     padding: 1vw 0 1vw 0;
     display: flex;
@@ -161,16 +161,21 @@ header .svg-menu {
     color: var(--cor4);
     font-weight: bold;
     margin-top: 10px;
+    transition: 0.25s;
+}
+
+.btn-banner:hover {
+    border-color: var(--cor5);
+    color: var(--cor5);
+}
+
+.btn-banner:active {
+    transform: scale(0.8);
 }
 
 .yellow-dash-headline {
     position: relative;
     z-index: 1;
-}
-
-@keyframes underlineHeadline {
-    from {width: 0;}
-    to {width: 103%;}
 }
 
 .yellow-dash-headline::before {
@@ -183,8 +188,6 @@ header .svg-menu {
     left: -2px;
     z-index: -1;
     border-radius: 15px;
-    animation-name: underlineHeadline;
-    animation-duration: 2s;
 }
 
 aside {
@@ -201,6 +204,8 @@ aside {
     border-radius: 15px;  
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 aside p {
@@ -271,11 +276,6 @@ ul {
     position: relative;
 }
 
-@keyframes underline {
-    from {width: 0;}
-    to {width: 103%;}
-}
-
 .yellow-dash::before {
     content: " ";
     width: 0;
@@ -286,13 +286,6 @@ ul {
     left: -3px;
     z-index: -1;
     border-radius: 15px;
-}
-
-.yellow-dash .animate::before {
-    width: 103%;
-    animation-name: underline;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
 }
 
 .yellow-stick {
@@ -313,9 +306,7 @@ ul {
 }
 
 /* section services */
-
 .service-card {
-    height: 240px;
     max-width: 220px;
 }
 
@@ -338,6 +329,7 @@ ul {
 
 .solutions .solution-card {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .img-platforms {
@@ -413,20 +405,22 @@ ul {
 }
 
 input {
-    padding: 4px;
+    padding: 8px 16px;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
     border: none;
+    min-width: 0;
 }
 
 .btn-conteiner {
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
 .btn-contact{
-    padding: 4px;
+    padding: 8px 16px;
     width: 70px;
     border-radius: 5px;
     border: none;
@@ -463,6 +457,8 @@ input {
 
 .award-pack {
     width: 150px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .link-award {
@@ -525,6 +521,8 @@ input {
     margin-bottom: -8vh;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-link {
@@ -715,6 +713,20 @@ footer img {
     margin-top: 10vh;
 }
 
+@media (min-width: 1400px) {
+    .conteiner {
+        max-width: 1200px;
+    }
+
+    .service-card {
+        max-width: 300px;
+    }
+
+    .award-card {
+        width: 280px;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1rem; 
@@ -783,8 +795,6 @@ footer img {
         padding: 15px 5px 15px 5px;
         white-space: nowrap;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
         border-radius: 0;
     }
 

@@ -17,13 +17,18 @@ if (typeof FlexSliderWC === 'undefined')
 
         init()
         {
-            
-            const btnBack = document.createElement("f-btn-back");
-            btnBack.innerHTML = "&lsaquo;";
+            let btnBack = this.querySelector("f-btn-back");
+            if(btnBack == null) {
+                btnBack = document.createElement("f-btn-back");
+                btnBack.innerHTML = "&lsaquo;";
+            }
             btnBack.addEventListener("click", () => this.back());
 
-            const btnNext = document.createElement("f-btn-next");
-            btnNext.innerHTML = "&rsaquo;";
+            let btnNext = this.querySelector("f-btn-next");
+            if(btnNext == null) {
+                btnNext = document.createElement("f-btn-next");
+                btnNext.innerHTML = "&rsaquo;";
+            }
             btnNext.addEventListener("click", () => this.next());
 
             const scroller = document.createElement("f-scroller");
