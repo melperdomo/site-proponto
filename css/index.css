@@ -152,7 +152,7 @@ header .svg-menu {
 }
 
 .btn-banner {
-    width: 150px;
+    width: max-content;
     padding: 8px;
     border: 1px solid var(--cor4);
     border-radius: 10px;
@@ -160,7 +160,6 @@ header .svg-menu {
     font-size: 0.8rem;
     color: var(--cor4);
     font-weight: bold;
-    margin-top: 10px;
     transition: 0.25s;
 }
 

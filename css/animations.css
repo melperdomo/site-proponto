@@ -13,11 +13,20 @@
     to {width: 103%;}
 }
 
-.yellow-dash .animate::before {
+.yellow-dash::before {
     width: 103%;
     animation-name: underline;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+@keyframes underlinePotencializar {
+    from {width: 0;}
+    to {width: 450%;}
+}
+
+#yellow-dash-potencializar::before {
+    animation-name: underlinePotencializar;
 }
 
 [data-animation] {
