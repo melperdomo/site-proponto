@@ -98,6 +98,11 @@
     animation-name: fade-from-down;
 }
 
+@media (max-width: 768px) {
+[data-animation-mobile='fade-from-down'] {
+    animation-name: fade-from-down;
+}}
+
 @keyframes grow-width {
     from { transform: scaleX(0%); }
     to { transform: scaleX(100%); }

@@ -688,12 +688,14 @@ input {
     left: -32px;
     border: none;
     color: var(--cor2);
+    top: 0;
 }
 
 .clients-slider f-btn-next {
     right: -32px;
     border: none;
     color: var(--cor2);
+    top: 0;
 }
 
 /* about */
