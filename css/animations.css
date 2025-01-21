@@ -105,3 +105,12 @@
 [data-animation='grow-width'] {
     animation-name: grow-width;
 }
+
+@keyframes grow-from-left {
+    from { transform: scaleX(0%); }
+    to { transform: scaleX(100%); }
+}
+[data-animation='grow-from-left'] {
+    animation-name: grow-from-left;
+    transform-origin: left;
+}
