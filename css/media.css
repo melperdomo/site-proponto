@@ -110,10 +110,6 @@
         top: 6px;
     }
 
-    /* #yellow-dash-potencializar::before {
-        left: -103px;   
-    } */
-
     .solutions {
         height: 900px;
         margin-bottom: -30vh;
@@ -183,9 +179,9 @@
     }
 
     .clients-slider {
-        width:80%; 
-        margin-left:auto;
-        margin-right:auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .img-case {

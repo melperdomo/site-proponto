@@ -534,7 +534,7 @@ input {
     bottom: 6px;
     left: -3px;
     height: 6px;
-    width: 170px;
+    width: 150px;
     background-color: var(--cor5);
     z-index: -1;
     border-radius: 3px;
@@ -689,6 +689,7 @@ input {
     border: none;
     color: var(--cor2);
     top: 0;
+    filter: none;
 }
 
 .clients-slider f-btn-next {
@@ -696,6 +697,14 @@ input {
     border: none;
     color: var(--cor2);
     top: 0;
+    filter: none;
+}
+
+
+.clients-slider f-btn-back:hover,
+.clients-slider f-btn-next:hover {
+    background-color: transparent;
+    color: var(--cor4);
 }
 
 /* about */
