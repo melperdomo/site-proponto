@@ -2,7 +2,7 @@
 
 @media (min-width: 1400px) {
     .conteiner {
-        max-width: 1200px;
+        max-width: 1100px;
     }
 
     .service-card {
@@ -16,23 +16,23 @@
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     h2 {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
 
     h3 {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     h4 {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
     }
 
     p {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     header {
@@ -40,7 +40,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     .header-logo {
         padding-left: 30px;
         width: 200px;
@@ -58,13 +58,13 @@
         right: 0px;
         font-size: 2em;
         width: 100%;
-        color:  #272b2e;
+        color: #272b2e;
         text-align: center;
         backdrop-filter: blur(5px);
     }
 
     .header-right.hide {
-        display: none;  
+        display: none;
     }
 
     header .svg-menu {
@@ -96,7 +96,8 @@
     }
 
     section .conteiner {
-        justify-content: center;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
     }
 
     section .section-content {
@@ -108,6 +109,16 @@
         height: 8px;
         left: -8px;
         top: 6px;
+    }
+
+    .services flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+    }
+
+    .services flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
     }
 
     .solutions {
@@ -128,7 +139,7 @@
     .contact .conteiner {
         justify-content: space-around;
     }
-    
+
     .contact .img-contact {
         margin-top: -122px;
     }
@@ -160,9 +171,29 @@
         text-align: left;
     }
 
+    .award flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+    }
+
+    .award flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
+    }
+
     .tech-card {
         height: 250px;
         justify-content: space-around;
+    }
+
+    .tech flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+    }
+
+    .tech flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
     }
 
     .cta {
@@ -173,7 +204,7 @@
         max-width: 280px;
         margin: auto;
     }
-    
+
     .clients .clients-logos {
         flex-direction: column;
     }
@@ -192,7 +223,7 @@
         top: calc(50% - 260px);
         left: calc(50% + 120px);
     }
-    
+
     .shadow-bg f-btn-back {
         left: calc(50% - 150px);
         top: calc(50% - 90px);
@@ -211,7 +242,16 @@
         padding: 15px;
         gap: 20px;
     }
+
+    .team .team-card {
+        width: 200px;
+    }
     
+    .team .team-photo {
+        width: 100%;
+        max-width: max-content;
+    }
+
     footer {
         padding-top: 5vh;
     }

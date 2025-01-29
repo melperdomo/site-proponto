@@ -1,0 +1,28 @@
+.svg-icon {
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: black;
+}
+ 
+.svg-icon.close {
+    mask-image: url('/images/icons/close.svg');
+    -webkit-mask-image: url('/images/icons/close.svg');
+}
+ 
+.svg-icon.chevron-rigth {
+    mask-image: url('/images/icons/chevron.svg');
+    -webkit-mask-image: url('/images/icons/chevron.svg');
+}
+ 
+.svg-icon.chevron-left {
+    mask-image: url('/images/icons/chevron.svg');
+    -webkit-mask-image: url('/images/icons/chevron.svg');
+    transform: rotateZ(180deg);
+}
