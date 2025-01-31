@@ -116,12 +116,14 @@
         display: flex;
         right: calc(50% - 180px);
         border: none;
+        filter: none
     }
 
     .services flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
         border: none;
+        filter: none;
     }
 
     .services .svg-icon {
@@ -223,12 +225,14 @@
         display: flex;
         right: calc(50% - 180px);
         border: none;
+        filter: none;
     }
 
     .tech flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
         border: none;
+        filter: none;
     }
 
     .tech .svg-icon {
@@ -259,11 +263,14 @@
     .clients flex-slider f-btn-next {
         display: flex;
         right: calc(50% - 180px);
-    }
+        filter: none;
+        border: none;
 
     .clients flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
+        filter: none;
+        border: none;
     }
 
     .img-case {
@@ -303,12 +310,14 @@
         display: flex;
         right: calc(50% - 180px);
         border: none;
+        filter: none;
     }
 
     .team flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
         border: none;
+        filter: none;
     }
 
     .team .svg-icon {
