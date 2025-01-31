@@ -16,23 +16,23 @@
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 0.8rem;
-    }
-
-    h3 {
         font-size: 1.3rem;
     }
 
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
     h4 {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     header {
@@ -83,7 +83,7 @@
     }
 
     aside p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     aside {
@@ -98,6 +98,7 @@
     section .conteiner {
         justify-content: center !important;
         flex-wrap: wrap !important;
+        max-width: 80%;
     }
 
     section .section-content {
@@ -114,16 +115,28 @@
     .services flex-slider f-btn-next {
         display: flex;
         right: calc(50% - 180px);
+        border: none;
     }
 
     .services flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
+        border: none;
+    }
+
+    .services .svg-icon {
+        background-color: var(--cor2);
+        border: none;
+        filter: none;
+    }
+
+    .service-card {
+        max-width: 250px;
     }
 
     .solutions {
-        height: 900px;
-        margin-bottom: -30vh;
+        height: 1100px;
+        margin-bottom: -35vh;
     }
 
     .img-platforms {
@@ -138,10 +151,11 @@
 
     .contact .conteiner {
         justify-content: space-around;
+        max-width: 100%;
     }
 
     .contact .img-contact {
-        margin-top: -122px;
+        margin-top: -134px;
     }
 
     .contact-form {
@@ -174,26 +188,53 @@
     .award flex-slider f-btn-next {
         display: flex;
         right: calc(50% - 180px);
+        border: none;
     }
 
     .award flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
+        border: none;
+    }
+
+    .award .svg-icon {
+        background-color: var(--cor2);
+        border: none;
+        filter: none;
+    }
+
+    .award-card {
+        width: 250px;
+        height: max-content;
+    }
+
+    .gray-line {
+        width: 80%;
+        margin: auto;
     }
 
     .tech-card {
-        height: 250px;
+        width: 250px;
+        height: max-content;
         justify-content: space-around;
     }
 
     .tech flex-slider f-btn-next {
         display: flex;
         right: calc(50% - 180px);
+        border: none;
     }
 
     .tech flex-slider f-btn-back {
         display: flex;
         left: calc(50% - 180px);
+        border: none;
+    }
+
+    .tech .svg-icon {
+        background-color: var(--cor2);
+        border: none;
+        filter: none;
     }
 
     .cta {
@@ -213,6 +254,16 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .clients flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+    }
+
+    .clients flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
     }
 
     .img-case {
@@ -238,9 +289,38 @@
         text-align: center;
     }
 
-    .photo-galery {
+    /* .team f-scroller,
+    .team flex-slider,
+    .team f-slide {
+        height: max-content;
+    } */
+
+    /* .team .conteiner {
+        height: max-content;
+    } */
+
+    .team flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+        border: none;
+    }
+
+    .team flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
+        border: none;
+    }
+
+    .team .svg-icon {
+        background-color: var(--cor2);
+        border: none;
+        filter: none;
+    }
+
+    .team .photo-galery {
         padding: 15px;
         gap: 20px;
+        height: max-content;
     }
 
     .team .team-card {
@@ -258,7 +338,8 @@
 
     footer .conteiner {
         gap: 20px;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 30px;
     }
 
     .footer-logo {

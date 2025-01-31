@@ -576,9 +576,9 @@ input {
 .team .conteiner:first-of-type {
     width: 100%;
     max-width: 1050px;
-    padding-bottom: 20px;
     text-align: left;
     flex-direction: column;
+    padding: 0 30px 20px 30px;
 }
 
 .team flex-slider f-btn-next, 

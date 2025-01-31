@@ -241,7 +241,7 @@ aside hr {
 
 footer {
     padding-top: 10vh;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: white;
     background-color: var(--cor2);
 }
@@ -259,7 +259,7 @@ footer .address {
 }
 
 footer p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .footer-nav {
@@ -267,7 +267,7 @@ footer p {
     flex-direction: column;
     justify-content: flex-start;
     width: 250px;
-    gap: 15px;
+    gap: 20px;
 }
 
 footer a {
@@ -279,6 +279,17 @@ footer .footer-right {
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
+    padding-top: 20px;
+}
+
+footer .media-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer .media-link {
+    width: 40px;    
 }
 
 .footer-logo {
