@@ -412,18 +412,43 @@
         <h3 data-animation="fade-from-up" data-animation-delay="0.3">Alguns de nossos projetos de sucesso</h3>
       </div>
       <div class="conteiner">
-        <div class="shadow hover">
-          <img onclick="openCase()" class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever"
-            data-animation="fade-from-down" data-animation-delay="0.3" />
-        </div>
-        <div class="shadow hover">
-          <img onclick="openCase()" class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini"
-            data-animation="fade-from-down" data-animation-delay="0.6" />
-        </div>
-        <div class="shadow hover">
-          <img onclick="openCase()" class="img-case" src="/images/Case Heineken.png"
-            alt="logo cardápio de incentivos heineken" data-animation="fade-from-down" data-animation-delay="0.9" />
-        </div>
+        <flex-slider class="cases-slider" items-per-scroll="3" items-per-scroll-mobile="1">
+          <f-btn-back data-animation="fade-from-down" data-animation-delay="0.1" data-animation="fade-from-right"><span
+              class="svg-icon chevron-left"></span></f-btn-back>
+
+          <f-slide>
+            <div onclick="openCase('.flex-unilever')" class="case-hover">
+              <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever"
+                data-animation="fade-from-down" data-animation-delay="0.3" data-animation-delay-mobile="0.3" />
+              <div class="shadow-hover">
+                <span>Ver mais</span>
+              </div>
+            </div>
+          </f-slide>
+
+          <f-slide>
+            <div onclick="openCase('.flex-fini')" class="case-hover">
+              <img class="img-case" src="/images/Case Fini.png" alt="logo fini" data-animation="fade-from-down"
+                data-animation-delay="0.6" data-animation-delay-mobile="0.3" />
+              <div class="shadow-hover">
+                <span>Ver mais</span>
+              </div>
+            </div>
+          </f-slide>
+
+          <f-slide>
+            <div onclick="openCase('.flex-heineken')" class="case-hover">
+              <img class="img-case" src="/images/Case Heineken.png" alt="logo heineken" data-animation="fade-from-down"
+                data-animation-delay="0.9" data-animation-delay-mobile="0.3" />
+              <div class="shadow-hover">
+                <span>Ver mais</span>
+              </div>
+            </div>
+          </f-slide>
+
+          <f-btn-next data-animation="fade-from-down" data-animation-delay="0.8"><span
+              class="svg-icon chevron-rigth"></span></f-btn-next>
+        </flex-slider>
       </div>
     </section>
 
@@ -643,17 +668,19 @@
         <a href="https://b2b.proponto.com.br/Compliance?origin=UHJvcG9udG8=" target="blank"
           data-animation="fade-from-left" data-animation-delay="0.8">Canal de Ética</a>
       </div>
-    </div>
 
-    <div class="footer-right">
-      <img class="footer-logo" src="/images/logo-pp-branco-1.png" alt="logo proponto" data-animation="fade-from-right"
-        data-animation-delay="0.3" />
-      <p data-animation="fade-from-right" data-animation-delay="0.6">Siga nossas redes sociais</p>
-      <div class="media-links">
-        <a href="https://www.linkedin.com/company/pr%C3%B3ponto/" target="blank"><img class="media-link" src="/images/linkedin.png"
-            alt="linkedin proponto" data-animation="fade-from-right" data-animation-delay="0.9" /></a>
-        <a href="https://www.instagram.com/proponto/" target="blank"><img class="media-link" src="/images/instagram.png"
-            alt="instagram proponto" data-animation="fade-from-right" data-animation-delay="1.2" /></a>
+      <div class="footer-right">
+        <img class="footer-logo" src="/images/logo-pp-branco-1.png" alt="logo proponto" data-animation="fade-from-right"
+          data-animation-delay="0.3" />
+        <p data-animation="fade-from-right" data-animation-delay="0.6">Siga nossas redes sociais</p>
+        <div class="media-links">
+          <a href="https://www.linkedin.com/company/pr%C3%B3ponto/" target="blank"><img class="media-link"
+              src="/images/linkedin.png" alt="linkedin proponto" data-animation="fade-from-right"
+              data-animation-delay="0.9" /></a>
+          <a href="https://www.instagram.com/proponto/" target="blank"><img class="media-link"
+              src="/images/instagram.png" alt="instagram proponto" data-animation="fade-from-right"
+              data-animation-delay="1.2" /></a>
+        </div>
       </div>
     </div>
 
@@ -665,7 +692,7 @@
 
   <div class="shadow-bg hidden">
     <div class="svg-icon close" onclick="closeCase()"><img src="/images/icons/close.svg" alt="close icon"></div>
-    <flex-slider items-per-scroll="1" items-per-scroll-mobile="1">
+    <flex-slider class="flex-unilever none" items-per-scroll="1" items-per-scroll-mobile="1">
       <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
       <f-slide>
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
@@ -695,67 +722,95 @@
           prêmios em um só lugar. É mais do que praticidade, é a solução estratégica que transforma resultados e
           impulsiona conquistas!</p>
       </f-slide>
-
-      <f-slide>
-        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-        <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o engajamento em
-          toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus reconhece
-          o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace exclusivo.
-          Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-        <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o engajamento em
-          toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus reconhece
-          o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace exclusivo.
-          Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-        <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o engajamento em
-          toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus reconhece
-          o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace exclusivo.
-          Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-        <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o engajamento em
-          toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus reconhece
-          o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace exclusivo.
-          Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-      </f-slide>
-
-      <f-slide>
-        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-        <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-          alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências incríveis.
-          Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e brindar
-          juntos ao sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-        <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-          alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências incríveis.
-          Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e brindar
-          juntos ao sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-        <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-          alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências incríveis.
-          Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e brindar
-          juntos ao sucesso!</p>
-      </f-slide>
-      <f-slide>
-        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-        <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-          alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências incríveis.
-          Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e brindar
-          juntos ao sucesso!</p>
-      </f-slide>
-
       <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
     </flex-slider>
+
+    <flex-slider class="flex-fini none" items-per-scroll="1" items-per-scroll-mobile="1">
+      <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
+          <f-slide>
+            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
+              engajamento em
+              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
+              reconhece
+              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
+              exclusivo.
+              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
+              engajamento em
+              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
+              reconhece
+              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
+              exclusivo.
+              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
+              engajamento em
+              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
+              reconhece
+              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
+              exclusivo.
+              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
+              engajamento em
+              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
+              reconhece
+              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
+              exclusivo.
+              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
+          </f-slide>
+          <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
+        </flex-slider>
+
+        <flex-slider class="flex-heineken none" items-per-scroll="1" items-per-scroll-mobile="1">
+          <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
+          <f-slide>
+            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
+              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
+              incríveis.
+              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
+              brindar
+              juntos ao sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
+              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
+              incríveis.
+              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
+              brindar
+              juntos ao sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
+              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
+              incríveis.
+              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
+              brindar
+              juntos ao sucesso!</p>
+          </f-slide>
+          <f-slide>
+            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
+              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
+              incríveis.
+              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
+              brindar
+              juntos ao sucesso!</p>
+          </f-slide>
+
+          <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
+        </flex-slider>
   </div>
   <script src="/js/animations.js"></script>
 </body>

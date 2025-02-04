@@ -56,6 +56,14 @@ body {
     z-index: -1 !important;
 }
 
+.none {
+    display: none;
+}
+
+flex-slider f-scroller {
+    overflow-y: hidden;
+}
+
 a {
     text-decoration: none;
     color: var(--cor2);

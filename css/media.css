@@ -183,7 +183,7 @@
     }
 
     .award .section-content {
-        max-width: 260px;
+        max-width: 280px;
         text-align: left;
     }
 
@@ -214,7 +214,11 @@
         width: 80%;
         margin: auto;
     }
-
+    
+    .tech .section-content {
+        width: 280px;
+    }
+    
     .tech-card {
         width: 250px;
         height: max-content;
@@ -245,6 +249,28 @@
         text-align: center;
     }
 
+    .cases flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+        border: none;
+        filter: none;
+        top: calc(50% - 40px);
+    }
+
+    .cases flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
+        border: none;
+        filter: none;
+        top: calc(50% - 40px);
+    }
+
+    .cases .svg-icon {
+        background-color: var(--cor2);
+        border: none;
+        filter: none;
+    }
+
     .clients {
         max-width: 280px;
         margin: auto;
@@ -265,6 +291,7 @@
         right: calc(50% - 180px);
         filter: none;
         border: none;
+    }
 
     .clients flex-slider f-btn-back {
         display: flex;
@@ -295,16 +322,6 @@
     .shadow-bg p {
         text-align: center;
     }
-
-    /* .team f-scroller,
-    .team flex-slider,
-    .team f-slide {
-        height: max-content;
-    } */
-
-    /* .team .conteiner {
-        height: max-content;
-    } */
 
     .team flex-slider f-btn-next {
         display: flex;
@@ -356,8 +373,15 @@
     }
 
     footer .footer-right {
-        align-items: center;
-    }
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding-right: 30px;    
+    }    
+
+    footer .footer-right .media-links {
+        padding-top: 15px;
+    }    
 
     .footer-bottom {
         margin-top: 5vh;
