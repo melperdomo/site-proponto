@@ -311,12 +311,12 @@
 
     .shadow-bg f-btn-back {
         left: calc(50% - 150px);
-        top: calc(50% - 90px);
+        top: calc(50% - 110px);
     }
 
     .shadow-bg f-btn-next {
         right: calc(50% - 150px);
-        top: calc(50% - 90px);
+        top: calc(50% - 110px);
     }
 
     .shadow-bg p {
