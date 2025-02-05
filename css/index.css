@@ -32,6 +32,10 @@ html {
     color: var(--cor2);
 }
 
+.block-scroll-y {
+    overflow-y: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
