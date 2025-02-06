@@ -7,7 +7,6 @@
     src: url('/font/Poppins-Regular.woff2') format('woff2');
   }
   
-  /* Fonte Poppins Bold */
 @font-face {
     font-family: 'Poppins';
     font-weight: 700; /* Bold */

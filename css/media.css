@@ -88,7 +88,6 @@
 
     aside {
         width: 100%;
-        /* max-width: 280px; */
         padding: 15px 5px 15px 5px;
         white-space: nowrap;
         justify-content: center;
@@ -111,7 +110,7 @@
         left: -8px;
         top: 6px;
     }
-
+    
     .services flex-slider f-btn-next {
         display: flex;
         right: calc(50% - 180px);
@@ -137,8 +136,30 @@
     }
 
     .solutions {
-        height: 1100px;
+        height: 980px;
         margin-bottom: -35vh;
+    }
+
+    .solutions .conteiner {
+        max-width: 100%;
+    }
+
+    .solutions .section-content {
+        width: 70%;
+    }
+
+    .solutions flex-slider f-btn-next {
+        display: flex;
+        right: calc(50% - 180px);
+        border: none;
+        filter: none
+    }
+
+    .solutions flex-slider f-btn-back {
+        display: flex;
+        left: calc(50% - 180px);
+        border: none;
+        filter: none;
     }
 
     .img-platforms {
@@ -152,8 +173,10 @@
     }
 
     .contact .conteiner {
+        padding: 20px;
         justify-content: space-around;
-        max-width: 100%;
+        max-width: 80%;
+        text-align: center;
     }
 
     .contact .img-contact {
@@ -180,6 +203,7 @@
 
     .award {
         padding-top: 5vh;
+        padding-bottom: 0;
     }
 
     .award .section-content {
@@ -206,7 +230,7 @@
     }
 
     .award-card {
-        width: 250px;
+        width: 255px;
         height: max-content;
     }
 
@@ -220,7 +244,7 @@
     }
     
     .tech-card {
-        width: 250px;
+        width: 260px;
         height: max-content;
         justify-content: space-around;
     }
@@ -247,6 +271,7 @@
 
     .cta {
         text-align: center;
+        width: 85%;
     }
 
     .cases flex-slider f-btn-next {
@@ -301,26 +326,26 @@
     }
 
     .img-case {
-        max-width: 220px;
-    }
-
-    .shadow-bg .btn-close {
-        top: calc(50% - 260px);
-        left: calc(50% + 120px);
+        max-width: 260px;
     }
 
     .shadow-bg f-btn-back {
-        left: calc(50% - 150px);
-        top: calc(50% - 110px);
+        left: calc(50% - 180px);
+        top: calc(50%);
     }
 
     .shadow-bg f-btn-next {
-        right: calc(50% - 150px);
-        top: calc(50% - 110px);
+        right: calc(50% - 180px);
+        top: calc(50%);
     }
 
     .shadow-bg p {
         text-align: center;
+    }
+
+    .shadow-bg .svg-icon.close {
+        top: calc(50% - 200px);
+        left: calc(50% + 140px);
     }
 
     .team flex-slider f-btn-next {
@@ -356,6 +381,16 @@
     .team .team-photo {
         width: 100%;
         max-width: max-content;
+    }
+
+    .team h4 {
+        margin-top: -25px;
+        font-size: 1.2rem;
+    }
+    
+    .team h5 {
+        font-size: 1rem;
+        font-weight: normal;
     }
 
     footer {

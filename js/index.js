@@ -3,6 +3,11 @@ function openMenu() {
     menu.classList.toggle("hide");
 }
 
+function closeMenu() {
+    let menu = document.querySelector(".header-right");
+    menu.classList.add("hide");
+}
+
 function openCase(flex_case) {
     const f_case = document.querySelector(flex_case);
     const shadow_bg = document.querySelector(".shadow-bg");

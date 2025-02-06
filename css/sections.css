@@ -1,4 +1,4 @@
-/* for all sections */
+/* for each section */
 
 section {
     padding-top: 10vh;
@@ -145,11 +145,6 @@ li {
     padding: 15px;
 }
 
-/* .solutions f-slide:last-of-type .transparent {
-    min-width: 11%;
-    opacity: 1;
-} */
-
 .solutions f-btn-back {
     left: -32px;
     border: none;
@@ -162,16 +157,6 @@ li {
 
 .solutions .svg-icon {
     background-color: white !important;
-}
-
-/* .solutions flex-slider[items-per-scroll='4'] f-slide {
-    min-width: 22%;
-} */
-
-/* section contact */
-
-#contact {
-    margin-top: 20px;
 }
 
 .contact {
@@ -301,7 +286,7 @@ input {
 }
 
 .award-logo {
-    width: 150px;
+    width: 100%;
 }
 
 .gray-line {
@@ -345,7 +330,7 @@ input {
     bottom: 6px;
     left: -3px;
     height: 6px;
-    width: 170px;
+    width: 158px;
     background-color: var(--cor5);
     z-index: -1;
     border-radius: 3px;
@@ -362,7 +347,7 @@ input {
 }
 
 .tech-logo {
-    width: 120px;
+    width: 100%;
 }
 
 /* section cta */
@@ -469,9 +454,9 @@ input {
     opacity: 1;
 }
 
-.svg-icon.close {
+.shadow-bg .svg-icon.close {
     position: fixed;
-    top: calc(50% - 270px);
+    top: calc(50% - 210px);
     left: calc(50% + 160px);
     z-index: 2;
     cursor: pointer;
@@ -513,7 +498,7 @@ input {
 .shadow-bg f-btn-back {
     border: none;
     left: calc(50% - 200px);
-    top: calc(50% - 110px);
+    top: calc(50% - 50px);
     z-index: 2;
 }
 
@@ -526,7 +511,7 @@ input {
 .shadow-bg f-btn-next {
     border: none;
     right: calc(50% - 200px);
-    top: calc(50% - 110px);
+    top: calc(50% - 50px);
     z-index: 2;
 }
 
@@ -650,7 +635,7 @@ input {
 }
 
 .team .team-presentation {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .team-photo {
@@ -658,6 +643,7 @@ input {
     max-width: 150px;
 }
 
-.team p {
-    font-size: 0.7rem;
+.team h5 {
+    font-size: 0.8rem;
+    font-weight: normal;
 }

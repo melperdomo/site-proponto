@@ -44,13 +44,13 @@
       </div>
       <img onclick="openMenu()" class="svg-menu" src="/images/menu-svgrepo-com.svg" alt="botão de menu">
       <div class="header-right hide">
-        <a href="#services" data-animation="fade-from-up" data-animation-delay="0.1">Serviços</a>
-        <a href="#solutions" data-animation="fade-from-up" data-animation-delay="0.2">Soluções</a>
-        <a href="#award" data-animation="fade-from-up" data-animation-delay="0.3">Premiação</a>
-        <a href="#tech" data-animation="fade-from-up" data-animation-delay="0.4">Tecnologia</a>
-        <a href="#cases" data-animation="fade-from-up" data-animation-delay="0.5">Cases</a>
-        <a href="#about" data-animation="fade-from-up" data-animation-delay="0.6">Quem Somos</a>
-        <a href="#contact" data-animation="fade-from-up" data-animation-delay="0.7">Contato</a>
+        <a onclick="closeMenu()" href="#services" data-animation="fade-from-up" data-animation-delay="0.1">Serviços</a>
+        <a onclick="closeMenu()" href="#solutions" data-animation="fade-from-up" data-animation-delay="0.2">Soluções</a>
+        <a onclick="closeMenu()" href="#award" data-animation="fade-from-up" data-animation-delay="0.3">Premiação</a>
+        <a onclick="closeMenu()" href="#tech" data-animation="fade-from-up" data-animation-delay="0.4">Tecnologia</a>
+        <a onclick="closeMenu()" href="#cases" data-animation="fade-from-up" data-animation-delay="0.5">Cases</a>
+        <a onclick="closeMenu()" href="#about" data-animation="fade-from-up" data-animation-delay="0.6">Quem Somos</a>
+        <a onclick="closeMenu()" href="#contact" data-animation="fade-from-up" data-animation-delay="0.7">Contato</a>
       </div>
     </div>
   </header>
@@ -382,8 +382,8 @@
               <img class="tech-logo" src="/images/Incentis/incenti-promo.png" alt="logo incentipromo" />
               <p>
                 Plataforma promocional de operação e distribuição de números da
-                sorte, prêmios instantâneos e sorteios, com <span class="bold">integração com Sefaz
-                </span>, para auditoria de notas fiscais.
+                sorte, prêmios instantâneos e sorteios, com <span class="bold">integração com Sefaz,
+                </span> para auditoria de notas fiscais.
               </p>
             </div>
           </f-slide>
@@ -461,17 +461,13 @@
             <f-btn-back data-animation="fade-from-down" data-animation-delay="0.1"
               data-animation="fade-from-right"><span class="svg-icon chevron-left"></span></f-btn-back>
 
-            <f-slide data-animation="fade-from-down" data-animation-delay="0.2"><img class="client-logo-small"
-                src="/images/Logos/logo-acer.png" alt="logo Acer" /></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-small" src="/images/Logos/logo-acer.png" alt="logo Acer" /></f-slide>
 
-            <f-slide data-animation="fade-from-down" data-animation-delay="0.3"><img class="client-logo-small"
-                src="/images/Logos/logo-adidas.png" alt="logo Adidas" /></f-slide>
+            <f-slide><img loading="lazy" class="client-logo-small" src="/images/Logos/logo-adidas.png" alt="logo Adidas" /></f-slide>
 
-            <f-slide data-animation="fade-from-down" data-animation-delay="0.5"><img class="client-logo"
-                src="/images/Logos/logo-allianz.png" alt="logo Allianz" /></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-allianz.png" alt="logo Allianz" /></f-slide>
 
-            <f-slide data-animation="fade-from-down" data-animation-delay="0.7"><img class="client-logo"
-                src="/images/Logos/logo-bauducco.png" alt="logo Bauducco" /></f-slide>
+            <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-bauducco.png" alt="logo Bauducco" /></f-slide>
 
             <f-slide><img loading="lazy" class="client-logo" src="/images/Logos/logo-brf.png"
                 alt="logo BRF" /></f-slide>
@@ -571,56 +567,50 @@
             <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="0.2"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Guilherme.png" alt="guilherme foltys" />
                 <h4>Guilherme Foltys</h4>
-                <p>CEO</p>
+                <h5>CEO</h5>
               </div>
             </f-slide>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="0.4"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Fabio.png" alt="fabio ambrozio" />
                 <h4>Fábio Ambrozio</h4>
-                <p>Diretor de Novos Negócios</p>
+                <h5>Diretor de Novos Negócios</h5>
               </div>
             </f-slide>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="0.6"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Viviana.png" alt="viviana luchiari" />
                 <h4>Viviana Luchiari</h4>
-                <p>Diretora Operacional</p>
+                <h5>Diretora Operacional</h5>
               </div>
             </f-slide>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="0.8"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Caio.png" alt="caio garletti" />
                 <h4>Caio Garletti</h4>
-                <p>Diretor de Relacionamento</p>
+                <h5>Diretor de Relacionamento</h5>
               </div>
             </f-slide>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="1"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Milena.png" alt="milena ramacho" />
                 <h4>Milena Ramacho</h4>
-                <p>Diretora de Inteligência de Dados</p>
+                <h5>Diretora de Inteligência de Dados</h5>
               </div>
             </f-slide>
 
             <f-slide>
-              <div class="team-card" data-animation="fade-from-down" data-animation-delay="1.2"
-                data-animation-delay-mobile='0.2'>
+              <div class="team-card">
                 <img class="team-photo" src="/images/Rafael.png" alt="rafael moraes" />
                 <h4>Rafael Moraes</h4>
-                <p>Diretor de TI</p>
+                <h5>Diretor de TI</h5>
               </div>
             </f-slide>
             <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
@@ -696,121 +686,67 @@
       <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
       <f-slide>
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
-        <p>O VIU é a plataforma exclusiva da Unilever, que conecta distribuidores e equipes ao sucesso! Com acesso ao
-          Uni.co, Levers e outros programas, ela reúne mural de notícias, metas, relatórios, treinamentos e resgates de
-          prêmios em um só lugar. É mais do que praticidade, é a solução estratégica que transforma resultados e
-          impulsiona conquistas!</p>
+        <p>O VIU é a plataforma exclusiva da Unilever, que conecta distribuidores e equipes ao sucesso!</p>
       </f-slide>
       <f-slide>
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
-        <p>O VIU é a plataforma exclusiva da Unilever, que conecta distribuidores e equipes ao sucesso! Com acesso ao
-          Uni.co, Levers e outros programas, ela reúne mural de notícias, metas, relatórios, treinamentos e resgates de
-          prêmios em um só lugar. É mais do que praticidade, é a solução estratégica que transforma resultados e
-          impulsiona conquistas!</p>
+        <p>Com acesso ao Uni.co, Levers e outros programas, ela reúne mural de notícias, metas, relatórios, treinamentos e resgates de
+          prêmios em um só lugar.</p>
       </f-slide>
       <f-slide>
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
-        <p>O VIU é a plataforma exclusiva da Unilever, que conecta distribuidores e equipes ao sucesso! Com acesso ao
-          Uni.co, Levers e outros programas, ela reúne mural de notícias, metas, relatórios, treinamentos e resgates de
-          prêmios em um só lugar. É mais do que praticidade, é a solução estratégica que transforma resultados e
-          impulsiona conquistas!</p>
+        <p>É mais do que praticidade, é a solução estratégica que transforma resultados e impulsiona conquistas!</p>
       </f-slide>
       <f-slide>
         <img class="img-case" src="/images/Case Unilever.png" alt="logo viu unilever" />
-        <p>O VIU é a plataforma exclusiva da Unilever, que conecta distribuidores e equipes ao sucesso! Com acesso ao
-          Uni.co, Levers e outros programas, ela reúne mural de notícias, metas, relatórios, treinamentos e resgates de
-          prêmios em um só lugar. É mais do que praticidade, é a solução estratégica que transforma resultados e
-          impulsiona conquistas!</p>
       </f-slide>
       <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
     </flex-slider>
 
     <flex-slider class="flex-fini none" items-per-scroll="1" items-per-scroll-mobile="1">
       <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
-          <f-slide>
-            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
-              engajamento em
-              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
-              reconhece
-              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
-              exclusivo.
-              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
-              engajamento em
-              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
-              reconhece
-              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
-              exclusivo.
-              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
-              engajamento em
-              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
-              reconhece
-              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
-              exclusivo.
-              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
-            <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o
-              engajamento em
-              toda a cadeia do canal indireto! Com iniciativas que envolvem e premiam todos os times, o Fini Plus
-              reconhece
-              o desempenho de cada um. Os participantes acumulam pontos e resgatam prêmios em nosso marketplace
-              exclusivo.
-              Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
-          </f-slide>
-          <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
-        </flex-slider>
+      <f-slide>
+        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+        <p>O Fini Plus é o programa global de incentivo da Fini, que valoriza os resultados e fortalece o engajamento em
+          toda a cadeia do canal indireto!</p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+        <p>Com iniciativas que envolvem e premiam todos os times, o Fini Plus reconhece o desempenho de cada um.</p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+        <p>Os participantes acumulam pontos e resgatam prêmios em nosso marketplace exclusivo.</p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Fini.png" alt="logo somos mais fini" />
+        <p>Uma solução completa para impulsionar conquistas e reforçar parcerias de sucesso!</p>
+      </f-slide>
+      <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
+    </flex-slider>
 
-        <flex-slider class="flex-heineken none" items-per-scroll="1" items-per-scroll-mobile="1">
-          <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
-          <f-slide>
-            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
-              incríveis.
-              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
-              brindar
-              juntos ao sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
-              incríveis.
-              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
-              brindar
-              juntos ao sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
-              incríveis.
-              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
-              brindar
-              juntos ao sucesso!</p>
-          </f-slide>
-          <f-slide>
-            <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
-            <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! A cada meta
-              alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para experiências
-              incríveis.
-              Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
-              brindar
-              juntos ao sucesso!</p>
-          </f-slide>
+    <flex-slider class="flex-heineken none" items-per-scroll="1" items-per-scroll-mobile="1">
+      <f-btn-back><span class="svg-icon chevron-left"></span></f-btn-back>
+      <f-slide>
+        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+        <p>O Cardápio de Incentivos é o programa da Heineken que transforma conquistas em celebrações! </p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+        <p>A cada meta alcançada, bares e restaurantes acumulam Star$, a moeda exclusiva que abre portas para
+          experiências incríveis.</p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+        <p>Mais do que recompensar, é sobre fortalecer nossa parceria, impulsionar o crescimento do seu negócio e
+          brindar juntos ao sucesso!</p>
+      </f-slide>
+      <f-slide>
+        <img class="img-case" src="/images/Case Heineken.png" alt="logo cardápio de incentivos heineken" />
+      </f-slide>
 
-          <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
-        </flex-slider>
+      <f-btn-next><span class="svg-icon chevron-rigth"></span></f-btn-next>
+    </flex-slider>
   </div>
   <script src="/js/animations.js"></script>
 </body>
