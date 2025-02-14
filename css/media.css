@@ -35,6 +35,10 @@
         font-size: 1.1rem;
     }
 
+    a:hover {
+        color: var(--cor3);
+    }
+
     header {
         height: 70px;
         display: flex;
