@@ -424,6 +424,7 @@ input {
 }
 
 .shadow-bg .img-case {
+    max-width: 510px;
     height: auto;
 }
 
@@ -456,8 +457,8 @@ input {
 
 .shadow-bg .svg-icon.close {
     position: fixed;
-    top: calc(50% - 210px);
-    left: calc(50% + 160px);
+    top: calc(50% - 310px);
+    left: calc(50% + 260px);
     z-index: 2;
     cursor: pointer;
     filter: none;
@@ -486,7 +487,7 @@ input {
 
 .shadow-bg p {
     color: white;
-    max-width: 300px;
+    max-width: 510px;
     padding-top: 20px;
     font-size: 0.9em;
 }
@@ -497,7 +498,7 @@ input {
 
 .shadow-bg f-btn-back {
     border: none;
-    left: calc(50% - 200px);
+    left: calc(50% - 300px);
     top: calc(50% - 50px);
     z-index: 2;
 }
@@ -510,7 +511,7 @@ input {
 
 .shadow-bg f-btn-next {
     border: none;
-    right: calc(50% - 200px);
+    right: calc(50% - 300px);
     top: calc(50% - 50px);
     z-index: 2;
 }
