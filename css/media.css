@@ -78,11 +78,11 @@
     }
 
     .banner {
-        height: 480px;
+        height: 560px;
         background-size: auto 50%;
         background-position: 70% 110%;
         position: relative;
-        margin-top: -50px;
+        margin-top: -10px;
         background-image: url("/images/banner_mobile.png");
         background-size: cover;
         background-position: top;
@@ -90,7 +90,19 @@
     }
 
     .banner-content {
-        padding-left: 8vw;
+        padding-left: 0;
+    }
+
+    .banner-content h1 {
+        max-width: 99%;
+    }
+
+    .banner-content h2 {
+        width: 60%;
+    }
+
+    .conteiner {
+        max-width: 80%;
     }
 
 
@@ -115,15 +127,14 @@
     }
 
     aside p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     aside {
         width: 100%;
-        padding: 15px 5px 15px 5px;
-        white-space: nowrap;
+        padding: 15px;
         justify-content: center;
-        border-radius: 0;
+        border-radius: 15px;
     }
 
     section .conteiner {
