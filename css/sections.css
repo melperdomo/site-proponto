@@ -341,7 +341,7 @@ input {
     align-items: center;
     justify-content: space-around;
     width: 250px;
-    height: 230px;
+    height: max-content;
     text-align: center;
     box-shadow: 5px 20px 30px var(--cor3);
 }

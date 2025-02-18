@@ -152,7 +152,7 @@ header .svg-menu {
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 500px;
+    height: 580px;
     margin-top: 40px;
 }
 
@@ -166,13 +166,17 @@ header .svg-menu {
 .banner-content {
     display: flex;
     flex-direction: column;
-    padding-left: 17vw;
-    gap: 10px;
+    padding-left: 16vw;
+    gap: 15px;
+}
+
+.banner-content h2 {
+    max-width: 70%;
 }
 
 .btn-banner {
     width: max-content;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid var(--cor4);
     border-radius: 10px;
     text-align: center;
@@ -217,7 +221,7 @@ aside {
     max-width: 1050px;
     height: max-content;
     margin-top: -5vw;
-    padding: 25px 0 25px 0;
+    padding: 35px 0 35px 0;
     text-align: center;
     border-radius: 15px;  
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
@@ -228,6 +232,7 @@ aside {
 
 aside p {
     font-size: 1.2rem;
+    max-width: 45%;
 }
 
 aside hr {

@@ -45,6 +45,11 @@
         align-items: center;
     }
 
+    header .conteiner {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .header-logo {
         padding-left: 30px;
         width: 200px;
@@ -78,11 +83,11 @@
     }
 
     .banner {
-        height: 560px;
+        height: 570px;
         background-size: auto 50%;
         background-position: 70% 110%;
         position: relative;
-        margin-top: -10px;
+        margin-top: 15px;
         background-image: url("/images/banner_mobile.png");
         background-size: cover;
         background-position: top;
@@ -91,18 +96,21 @@
 
     .banner-content {
         padding-left: 0;
+        margin-top: -20px;
     }
 
     .banner-content h1 {
-        max-width: 99%;
+        max-width: 80%;
+        font-size: 1.5rem;
     }
 
     .banner-content h2 {
         width: 60%;
+        font-size: 0.9rem;
     }
 
     .conteiner {
-        max-width: 80%;
+        max-width: 83%;
     }
 
 
@@ -122,19 +130,21 @@
     }
 
     .yellow-dash-headline::before {
-        height: 3px;
+        height: 8px;
         bottom: 4px;
     }
 
     aside p {
         font-size: 1.2rem;
+        max-width: 100%;
     }
 
     aside {
         width: 100%;
-        padding: 15px;
+        padding: 45px;
         justify-content: center;
         border-radius: 15px;
+        margin-top: -20vw;
     }
 
     section .conteiner {
