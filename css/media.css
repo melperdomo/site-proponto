@@ -398,7 +398,7 @@
     }
 
     .shadow-bg .svg-icon.close {
-        top: calc(50% - 200px);
+        top: 50px;
         left: calc(50% + 140px);
     }
 
